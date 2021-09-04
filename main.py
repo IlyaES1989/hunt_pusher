@@ -5,13 +5,7 @@ from dispatcher import Dispatcher
 from reader import Reader
 from applicant import Applicant
 from logger import logger
-from cmd_args import parser
-
-ARGS = parser.parse_args()
-TOKEN = ARGS.token
-ENDPOINT = ARGS.endpoint
-CV_STORAGE = ARGS.cv
-CV_BASE = ARGS.file
+from cmd_args import ENDPOINT, TOKEN, CV_STORAGE, CV_BASE
 
 
 async def main(token, endpoint, path, cv_base):
